@@ -44,3 +44,18 @@ git log index.html --> ou sont passés les commits de chips.html?
 git log --follow index.html --> histoire reconstituée  
 git log --stat --follow index.html --> voir le renommage  
 git log -p -2 --follow index.html --> détail des deux précédents commits 
+
+Branches
+========
+
+étant satisfait de ce site, on le met en ligne
+master représente la version en ligne
+le développement continue sur une branche
+
+issue 53: une vraie recette
+---------------------------
+le développement continue sur une branche  
+git branch iss53 --> branche créée  
+git checkout iss53  --> aller sur la branche  
+ajouter des couleurs à chips.css  
+git commit -am 'C3: une vraie recette' --> add et commit simultanément  
