@@ -90,3 +90,8 @@ hotfix2 appliqué à master
 -------------------------
 git checkout master
 git merge hotfix2
+
+
+B fait aussi des modifications
+------------------------
+git push origin master --> rejeté
