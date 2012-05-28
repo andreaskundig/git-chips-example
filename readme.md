@@ -91,7 +91,44 @@ hotfix2 appliqué à master
 git checkout master
 git merge hotfix2
 
+iss54 appliqué à master
+-----------------------
+git merge iss54 --> conflit
+corriger index.html
+git commit -am 'C8: merge manuel apres le conflit'
+
+Hébergement sur internet
+========================
+Créer un compte sur bitbucket.org
+---------------------------------
+Create new repository  
+choisir un nom  
+Cocher git comme 'repository type'  
+
+retourner dans la ligne de commande:
+------------------------------------
+git remote add origin https://bitbucket.org/kundig2/chips-example.git  
+git push -u origin master  
+
+donner l'accès à un autre développeur (B)
+-----------------------------------------
+admin, access management, ajouter un nom, write  
+
+B reprend le projet chez lui
+----------------------------
+mkdir chips2  
+cd chips2  
+git clone https://bitbucket.org/kundig2/chips-example.git chips3  
+
+A fait des modifications
+------------------------
+éditer un fichier  
+git push  
 
 B fait aussi des modifications
 ------------------------
 git push origin master --> rejeté
+git fetch origin master
+git merge origin/master --> conflits
+réparer les conflits
+git commit -am 'merge'
