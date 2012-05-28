@@ -72,3 +72,21 @@ intégrer hotfix1 en production
 git checkout master  
 git merge hotfix1  
 git branch -d hotfix1 --> effacer la branche
+
+issue 54: plus appétissant
+--------------------------
+git checkout -b iss54
+changer la couleur, ajouter du texte
+git commit -am 'C6: plus appetissant'
+
+hotfix2: plus appétissant tout de suite
+---------------------------------------
+git checkout master
+git checkout -b hotfix2
+changer le texte
+git commit -am 'C7: plus appetissant tout de suite'
+
+hotfix2 appliqué à master
+-------------------------
+git checkout master
+git merge hotfix2
