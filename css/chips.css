@@ -1,12 +1,17 @@
+body{
+    background-color: orange;
+}
 div{
-    border: solid;
+    border: 60px Chartreuse solid;
 }
 #left {
+    background-color: Salmon;
     float: left;
     width: 600px;
     min-height: 400px;
 }
 #center {
+    background-color: MintCream;
     margin-left: 450px;
     min-height: 600px;
 }

@@ -43,7 +43,8 @@ git add index.html
 git log index.html --> ou sont passés les commits de chips.html?  
 git log --follow index.html --> histoire reconstituée  
 git log --stat --follow index.html --> voir le renommage  
- 
+git log -p -2 --follow index.html --> détail des deux précédents commits 
+
 Branches
 ========
 
