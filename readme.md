@@ -28,3 +28,19 @@ git checkout (premier commit) --> un seul fichier
 git checkout (deuxieme commit) --> deux fichiers  
 git checkout master --> il faut être sur une branche pour travailler  
 
+faire un peu d'ordre
+--------------------
+mv chips.html index.html --> fichier renommé  
+git status  
+git rm chips.html  
+git add index.html  
+mkdir css  
+git mv chips.css css --> fichier déplacé  
+git status --> les changements sont dans l'index  
+changer le lien vers chips.css dans index.html  
+git status --> index.html à la fois dans index et modified  
+git add index.html  
+git log index.html --> ou sont passés les commits de chips.html?  
+git log --follow index.html --> histoire reconstituée  
+git log --stat --follow index.html --> voir le renommage  
+git log -p -2 --follow index.html --> détail des deux précédents commits 
