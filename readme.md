@@ -43,4 +43,31 @@ git add index.html
 git log index.html --> ou sont passés les commits de chips.html?  
 git log --follow index.html --> histoire reconstituée  
 git log --stat --follow index.html --> voir le renommage  
-git log -p -2 --follow index.html --> détail des deux précédents commits 
+ 
+Branches
+========
+
+étant satisfait de ce site, on le met en ligne
+master représente la version en ligne
+le développement continue sur une branche
+
+issue 53: une vraie recette
+---------------------------
+le développement continue sur une branche  
+git branch iss53 --> branche créée  
+git checkout iss53  --> aller sur la branche  
+ajouter des couleurs à chips.css  
+git commit -am 'C3: une vraie recette' --> add et commit simultanément  
+
+bug à réparer en production
+---------------------------
+git checkout master  
+git checkout -b hotfix1 --> créer la branche et travailler dessus
+ajouter un espace dans index.html  
+git commit -a -m 'C4: un espace'  
+
+intégrer hotfix1 en production
+------------------------------
+git checkout master  
+git merge hotfix1  
+git branch -d hotfix1 --> effacer la branche
