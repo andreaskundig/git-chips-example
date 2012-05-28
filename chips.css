@@ -1,0 +1,12 @@
+div{
+    border: solid;
+}
+#left {
+    float: left;
+    width: 600px;
+    min-height: 400px;
+}
+#center {
+    margin-left: 450px;
+    min-height: 600px;
+}
