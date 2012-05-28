@@ -126,9 +126,9 @@ A fait des modifications
 git push  
 
 B fait aussi des modifications
-------------------------
-git push origin master --> rejeté
-git fetch origin master
-git merge origin/master --> conflits
-réparer les conflits
-git commit -am 'merge'
+-------------------------------
+git push origin master --> rejeté  
+git fetch origin master  
+git merge origin/master --> conflits  
+réparer les conflits  
+git commit -am 'merge'  
