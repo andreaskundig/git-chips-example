@@ -90,3 +90,23 @@ hotfix2 appliqué à master
 -------------------------
 git checkout master
 git merge hotfix2
+
+iss54 appliqué à master
+-----------------------
+git merge iss54 --> conflit
+corriger index.html
+git commit -am 'C8: merge manuel apres le conflit'
+
+Hébergement sur internet
+========================
+Créer un compte sur bitbucket.org
+---------------------------------
+Create new repository
+choisir un nom
+Cocher git comme 'repository type'
+
+retourner dans la ligne de commande:
+------------------------------------
+git remote add origin https://bitbucket.org/kundig2/chips-example.git
+git push -u origin master
+
